@@ -41,7 +41,8 @@
 </head>
 
 <body>
-
+@guest
+@else
 <!-- ########## START: LEFT PANEL ########## -->
 <div class="sl-logo"><a href=""><i class="icon ion-android-star-outline"></i> starlight</a></div>
 <div class="sl-sideleft">
@@ -172,7 +173,7 @@
         <nav class="nav">
             <div class="dropdown">
                 <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                    <span class="logged-name">{{Auth::user()->name}}<span class="hidden-md-down"></span></span>
+                    <span class="logged-name"></span>
                     <img src="{{asset('backend')}}/img/img3.jpg" class="wd-32 rounded-circle" alt="">
                 </a>
                 <div class="dropdown-menu dropdown-menu-header wd-200">
@@ -355,7 +356,7 @@
     </div><!-- tab-content -->
 </div><!-- sl-sideright -->
 <!-- ########## END: RIGHT PANEL ########## --->
-
+@endguest
 {{--Admin content--}}
 @yield('admin_content');
 
