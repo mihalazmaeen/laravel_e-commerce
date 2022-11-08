@@ -28,4 +28,7 @@ Route::get('admin/home', 'AdminController@index');
 Route::get('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin','Admin\LoginController@Login');
 Route::get('admin/logout','AdminController@logout')->name('admin.logout');
+//Category Section Begin -->
+Route::get('admin/categories','Admin\CategoryController@index')->name('admin.category');
+Route::post('admin/categories-store','Admin\CategoryController@StoreCat')->name('store.category');
 
