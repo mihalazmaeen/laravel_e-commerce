@@ -53,14 +53,26 @@
         </span><!-- input-group-btn -->
     </div><!-- input-group -->
 
-    <label class="sidebar-label">Navigation</label>
+
     <div class="sl-sideleft-menu">
-        <a href="index.html" class="sl-menu-link">
+        <a href="{{url('admin/home')}}" class="sl-menu-link">
             <div class="sl-menu-item">
                 <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
                 <span class="menu-item-label">Dashboard</span>
             </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
+        <a href="{{url('/')}}"  target="_blank" class="sl-menu-link">
+            <div class="sl-menu-item">
+                <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
+                <span class="menu-item-label">Visit Site</span>
+            </div><!-- menu-item -->
+        </a>
+        <a href="{{url('/')}}" class="sl-menu-link">
+            <div class="sl-menu-item">
+                <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
+                <span class="menu-item-label">Category</span>
+            </div><!-- menu-item -->
+        </a>
         <a href="widgets.html" class="sl-menu-link">
             <div class="sl-menu-item">
                 <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
